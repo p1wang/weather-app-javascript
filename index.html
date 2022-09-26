@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Search bar -->
+      <form class="search-form">
+        <div class="search-bar">
+          <input id="input" value="" placeholder="Search" />
+          <button id="search-button" type="submit">
+            <i class="fa-solid fa-lg fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div>
+          <ul class="auto-complete"></ul>
+        </div>
+      </form>
+
+      <!-- Weather card -->
+      <div class="weather-card">
+        <div class="weather-card__city">
+          <span id="city">Toronto</span>
+          <h2 id="temperature-c">28 <span>&#8451;</span></h2>
+        </div>
+        <div class="weather-card__condition">
+          <span id="condition">Sunny</span>
+          <img id="weather-icon" src="" width="100px" height="100px" alt="Weather conditon icon" />
+        </div>
+        <div class="weather-card__forecast">
+          <span>Forecast:</span>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
